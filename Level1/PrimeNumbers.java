@@ -13,9 +13,18 @@ public class PrimeNumbers {
     return true;
   }
 
+  public static void primeTillN(int n){
+    for (int i=1; i<=n; i++){
+      if(isPrime(i)){
+        System.out.println(i);
+      }
+    }
+  }
+
   public static void main(String args[]){
     Scanner scn = new Scanner(System.in);
-    int number = scn.nextInt();
-    System.out.println(isPrime(number));
+    int n = scn.nextInt();
+    // System.out.println(isPrime(n));
+    primeTillN(n);
   }
 }
