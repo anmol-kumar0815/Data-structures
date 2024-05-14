@@ -28,9 +28,19 @@ public class NumberMath {
     }
   }
 
+  public static void printInverseOfNumber(int number){
+    int quotient = number;
+
+    while(quotient != 0){
+      int remainder = quotient % 10;
+      System.out.println(remainder);
+      quotient = quotient / 10;
+    }
+  }
+
   public static void main(String args[]){
     Scanner scn = new Scanner(System.in);
     int n = scn.nextInt();
-    printDigitsOfNumber(n);
+    printInverseOfNumber(n);
   }
 }
